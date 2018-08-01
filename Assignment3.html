@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+        function Add() {
+
+        }
+    </script>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 400px;
+            
+        }
+
+        td, th  {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        .styling:nth-child(even) {
+            background-color: #f7e7e7;
+        }
+        #Add ,#Update,#reset {
+    background-color: #f7e7e7;
+    color: black;
+    border: 1px solid #dddddd; 
+    /* Green */
+}
+    </style>
+</head>
+<body>
+    
+    <div style="float:left; width:50%;">
+        <h1 style="font-family:'Book Antiqua'">List<br /></h1>
+        <table style="padding-top:1000px">
+
+            <tr class="styling">
+                <th >Name</th>
+                <th >Gender</th>
+                <th >
+                    Age
+                </th>
+                <th >
+                    City
+                </th>
+                <th >Action</th>
+            </tr>
+            <tr class="styling">
+                <td>David</td>
+                <td>85</td>
+                <td>87</td>
+                <td>88</td>
+                <td>92</td>
+                
+            </tr>
+            <tr class="styling">
+                <td>David</td>
+                <td>85</td>
+                <td>87</td>
+                <td>88</td>
+                <td>92</td>
+
+            </tr>
+            <tr class="styling">
+                <td>David</td>
+                <td>85</td>
+                <td>87</td>
+                <td>88</td>
+                <td>92</td>
+
+            </tr>
+        </table>
+        </div>
+    <div style="float:left; width:40%; padding-left:100px">
+        <form>
+            <h1 style="font-family:'Book Antiqua'">Add/Update Person Form</h1>
+            <table style="border:1px dashed grey ;height:300px; background-color: #f7e7e7">
+                <tr>
+                    <td>
+                        Name : <input type="text" id="txtName"/>
+                        <br />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="radio" id="gender1" name="gender" value="Female"><label for="gender1">Female </label>
+
+                        <input type="radio" id="gender2"
+                               name="gender" value="Male"><label for="gender2">Male </label>
+
+                        <input type="radio" id="gender3"
+                               name="gender" value="Other"><label for="gender3">Other </label>
+                        <br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Age : <input type="text" id="txtAge" />
+                        <br />
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <select>
+                            <option value="Bangalore">Bangalore</option>
+                            <option value="Pune">Pune</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                        </select>
+                        <br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="reset" id="reset"/>
+                        <input type="button" id="Add" value="Add" onclick="Add()"/>
+                        <input type="button" id="Update" value="Update" onclick="Update()" />
+                        <br />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
